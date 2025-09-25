@@ -1,23 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/topAppBar"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@drawable/toolbar_bg"
-        app:title="@string/activities"
-        app:titleCentered="false"
-        app:titleTextColor="@android:color/white" />
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
 
-    <FrameLayout
-        android:id="@+id/fragmentContainer"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/main_logo" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Track all your day to day Activities,Mood and Reminders
+Improve your Health journey"
+            android:textAlignment="center"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/orage_activitymain_button" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGoToMain2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="46dp"
+            android:background="@drawable/main_button1"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Start Now"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>
