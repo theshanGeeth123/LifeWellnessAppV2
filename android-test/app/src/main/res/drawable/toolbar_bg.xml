@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
     <gradient
-        android:startColor="@color/purple1"
-        android:endColor="@color/purple2"
+        android:startColor="@color/orage_activitymain_button"
+        android:endColor="@color/orage_activitymain_button"
         android:angle="90"/>
 </shape>
