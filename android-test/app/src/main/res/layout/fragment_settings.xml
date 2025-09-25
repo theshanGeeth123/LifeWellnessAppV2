@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Hydration Reminders"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <!-- Enable/disable periodic reminders -->
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="Enable reminders"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Switch
+                android:id="@+id/switchEnable"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Interval in hours for periodic WorkManager -->
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="Interval (hours):"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+            <NumberPicker
+                android:id="@+id/npHours"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+        <!-- Immediate test -->
+        <Button
+            android:id="@+id/btnTestNow"
+            android:text="Test reminder now"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <!-- One-time test in minutes -->
+        <View
+            android:layout_width="match_parent" android:layout_height="1dp"
+            android:layout_marginTop="16dp" android:background="#333333"/>
+
+        <TextView
+            android:text="Testing (one-time):"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="Run after (minutes):"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+            <NumberPicker
+                android:id="@+id/npTestMinutes"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnTestAfterMinutes"
+            android:text="Schedule one-time test"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:text="Note: Periodic WorkManager tasks have a minimum interval of 15 minutes. Use the one-time test above for faster demos."
+            android:textSize="12sp"
+            android:textColor="#888888"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

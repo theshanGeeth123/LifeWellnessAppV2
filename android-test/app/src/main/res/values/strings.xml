@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Assignment 3</string>
+
+
+
+
+    <string name="edit_habit">Edit Habit</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string name="progress_format">Today: %1$d/%2$d (%3$d%%)</string>
+    <string name="viewing_date">Viewing: %1$s</string>
+    <string name="change_date">Change Date</string>
+
+    <string name="add_mood">Add Mood</string>
+    <string name="delete">Delete</string>
+    <string name="pick_emoji">Pick an emoji</string>
+    <string name="note_optional">Note (optional)</string>
+    <string name="mood_journal">Mood Journal</string>
+    <string name="activities">My Activities</string>
+
+    <string name="hydration_channel_name">Hydration Reminders</string>
+    <string name="hydration_channel_desc">Reminds you to drink water at your chosen interval</string>
+    <string name="hydration_title">Time to hydrate</string>
+    <string name="hydration_text">Drink a glass of water 💧</string>
+
+
+
+</resources>
+
+

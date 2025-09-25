@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvPickEmoji"
+            android:text="@string/pick_emoji"
+            android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <GridLayout
+            android:id="@+id/emojiGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="6"
+            android:rowCount="2"
+            android:layout_marginTop="8dp">
+
+            <TextView android:text="😀" android:padding="6dp"/>
+            <TextView android:text="😊" android:padding="6dp"/>
+            <TextView android:text="😐" android:padding="6dp"/>
+            <TextView android:text="😔" android:padding="6dp"/>
+            <TextView android:text="😡" android:padding="6dp"/>
+            <TextView android:text="😴" android:padding="6dp"/>
+            <TextView android:text="🤒" android:padding="6dp"/>
+            <TextView android:text="😎" android:padding="6dp"/>
+            <TextView android:text="🥳" android:padding="6dp"/>
+            <TextView android:text="😭" android:padding="6dp"/>
+            <TextView android:text="🤯" android:padding="6dp"/>
+            <TextView android:text="❤️" android:padding="6dp"/>
+        </GridLayout>
+
+        <EditText
+            android:id="@+id/etNote"
+            android:hint="@string/note_optional"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minLines="2"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
