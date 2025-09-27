@@ -14,7 +14,7 @@
     <string name="add_mood">Add Mood</string>
     <string name="delete">Delete</string>
     <string name="pick_emoji">Pick an emoji</string>
-    <string name="note_optional">Note (optional)</string>
+    <string name="note_optional">Add your own note to mode journel</string>
     <string name="mood_journal">Mood Journal</string>
     <string name="activities">My Activities</string>
 
@@ -22,6 +22,8 @@
     <string name="hydration_channel_desc">Reminds you to drink water at your chosen interval</string>
     <string name="hydration_title">Time to hydrate</string>
     <string name="hydration_text">Drink a glass of water 💧</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

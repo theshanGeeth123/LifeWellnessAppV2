@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/root"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent">
 
     <!-- Content column -->
@@ -14,14 +15,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!-- Date row -->
         <LinearLayout
             android:id="@+id/headerRow"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginBottom="8dp">
+            android:layout_marginTop="5dp"
+            >
 
             <TextView
                 android:id="@+id/tvDate"
@@ -29,21 +30,75 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Viewing: Today"
+                android:textColor="@color/black"
                 android:textStyle="bold"/>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnChangeDate"
                 android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:layout_height="wrap_content"
+                android:background="@drawable/button2"
                 android:text="@string/change_date"/>
         </LinearLayout>
 
-        <!-- Progress -->
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Track your day to day Activities,Mood and Reminders" />
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingRight="0dp"
+                android:maxWidth="200dp"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:text="The Habits Tracking App is a simple and user-friendly tool designed to help individuals build and maintain positive daily routines."
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+
+                android:layout_marginRight="0dp"
+                android:tag="reveal"
+                app:srcCompat="@drawable/img1" />
+        </LinearLayout>
+
         <TextView
             android:id="@+id/tvProgress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Today: 0/0 (0%)"
+            android:textColor="@color/orange_dark1"
+            android:textStyle="bold"
             android:layout_marginTop="4dp"/>
 
         <ProgressBar
@@ -52,10 +107,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:max="100"
+            android:progressTint="@color/black"
             android:progress="0"
             android:layout_marginTop="6dp"/>
 
-        <!-- The RecyclerView **must** have this id -->
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvHabits"
             android:layout_width="match_parent"
@@ -64,7 +120,7 @@
             android:paddingTop="12dp"/>
     </LinearLayout>
 
-    <!-- FAB anchored to the content column (or rvHabits if you prefer) -->
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAdd"
         android:layout_width="wrap_content"

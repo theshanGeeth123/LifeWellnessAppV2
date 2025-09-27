@@ -8,6 +8,7 @@
 
     <CheckBox
         android:id="@+id/cbDone"
+        android:layout_marginLeft="-10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
@@ -17,6 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:paddingStart="12dp"
+        android:textColor="@color/black"
         android:textSize="16sp"/>
 
     <!-- inside root LinearLayout, just before btnDelete -->
@@ -24,9 +26,11 @@
         android:id="@+id/btnEdit"
         android:layout_width="40dp"
         android:layout_height="40dp"
+
         android:contentDescription="Edit"
         android:src="@android:drawable/ic_menu_edit"
-        android:background="?attr/selectableItemBackgroundBorderless" />
+        android:layout_marginRight="5dp"
+        android:background="@color/red3" />
 
 
     <ImageButton
@@ -35,5 +39,5 @@
         android:layout_height="40dp"
         android:contentDescription="Delete"
         android:src="@android:drawable/ic_menu_delete"
-        android:background="?attr/selectableItemBackgroundBorderless"/>
+        android:background="@color/red1"/>
 </LinearLayout>
