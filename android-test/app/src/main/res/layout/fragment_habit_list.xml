@@ -5,6 +5,7 @@
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:background="@color/white"
+    android:backgroundTint="#FFF8F7"
     android:layout_height="match_parent">
 
     <!-- Content column -->
@@ -26,6 +27,8 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@color/white"
             android:gravity="center_vertical"
             android:layout_marginTop="5dp"
             >
@@ -70,7 +73,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="0dp">
+            android:background="@color/white"
+            android:padding="8dp"
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -78,7 +83,8 @@
                 android:paddingTop="30dp"
                 android:paddingRight="0dp"
                 android:maxWidth="200dp"
-                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textColor="#919090"
                 android:textSize="13sp"
                 android:text="The Habits Tracking App is a simple and user-friendly tool designed to help individuals build and maintain positive daily routines."
                 />
@@ -121,6 +127,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvHabits"
             android:layout_width="match_parent"
+            android:background="@color/white"
+            android:padding="8dp"
             android:layout_height="0dp"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
@@ -135,6 +143,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="Add habit"
+        app:backgroundTint="#F78686"
         app:srcCompat="@android:drawable/ic_input_add"
         android:layout_margin="16dp"
         app:layout_anchor="@id/content"
