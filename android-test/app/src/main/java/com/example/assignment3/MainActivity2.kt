@@ -1,5 +1,6 @@
 package com.example.assignment3
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -66,6 +67,13 @@ class MainActivity2 : AppCompatActivity() {
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.fragmentContainer, SettingsFragment())
                     .commit()
+                true
+            }
+            R.id.logout -> {
+
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+
                 true
             }
             else -> super.onOptionsItemSelected(item)

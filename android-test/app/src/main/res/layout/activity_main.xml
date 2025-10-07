@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:paddingRight="20dp"
             android:textSize="18dp"
+            android:textStyle="bold"
             android:paddingLeft="20dp"
             android:text="Track all your day to day Activities,Mood and Reminders
 Improve your Health journey, Dont need register or Login you can use directly"

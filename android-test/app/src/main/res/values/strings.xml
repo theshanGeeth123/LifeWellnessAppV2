@@ -9,7 +9,7 @@
 
     <string name="progress_format">Today: %1$d/%2$d (%3$d%%)</string>
     <string name="viewing_date">Viewing: %1$s</string>
-    <string name="change_date">Change Date</string>
+    <string name="change_date">Date</string>
 
     <string name="add_mood">Add Mood</string>
     <string name="delete">Delete</string>
