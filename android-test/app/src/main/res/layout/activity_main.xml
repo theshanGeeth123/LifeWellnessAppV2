@@ -30,7 +30,7 @@
             android:textStyle="bold"
             android:paddingLeft="20dp"
             android:text="Track all your day to day Activities,Mood and Reminders
-Improve your Health journey, Dont need register or Login you can use directly"
+Improve your Health journey, "
             android:textAlignment="center"
             android:textColor="@color/black" />
 
@@ -45,7 +45,7 @@ Improve your Health journey, Dont need register or Login you can use directly"
             android:paddingRight="40dp"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:text="Start Now"
+            android:text="Get Started"
             android:textColor="@color/white" />
 
     </LinearLayout>

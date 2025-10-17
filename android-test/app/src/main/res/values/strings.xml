@@ -25,6 +25,23 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="next_btn">Next</string>
+
+    <string name="landing1t1">Track Your Habits.</string>
+
+    <string name="landing1t2">Where healthy habits meet mindful reflection.</string>
+
+    <string name="landing1t3">Build routines that shape a happier.</string>
+
+    <string name="landing2t1">Capture Every Mood.</string>
+
+    <string name="landing2t2">Your emotions tell your story</string>
+
+    <string name="landing2t3">Track your moods. \nReflect deeply. Grow gently.</string>
+
+    <string name="landing3t1">See your patterns, celebrate progress,\n and grow daily.</string>
+
+    <string name="landing3t2">Find your flow.</string>
 
 </resources>
 
