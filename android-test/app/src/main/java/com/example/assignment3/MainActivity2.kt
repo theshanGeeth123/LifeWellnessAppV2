@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.assignment3.notifications.NotificationHelper
 import com.example.assignment3.ui.settings.SettingsFragment
@@ -31,6 +32,42 @@ class MainActivity2 : AppCompatActivity() {
                     R.id.fragmentContainer,
                     com.example.assignment3.ui.habits.list.HabitListFragment()
                 )
+                .commit()
+        }
+
+        val btn1 = findViewById<Button>(R.id.btnAct)
+        btn1.setOnClickListener {
+            supportActionBar?.title = ""
+            supportFragmentManager.beginTransaction()
+                .replace(
+                    R.id.fragmentContainer,
+                    com.example.assignment3.ui.habits.list.HabitListFragment()
+                )
+                .addToBackStack("mood")
+                .commit()
+        }
+
+        val btn2 = findViewById<Button>(R.id.btnMood)
+        btn2.setOnClickListener {
+            supportActionBar?.title = ""
+            supportFragmentManager.beginTransaction()
+                .replace(
+                    R.id.fragmentContainer,
+                    com.example.assignment3.ui.mood.MoodListFragment()
+                )
+                .addToBackStack("mood")
+                .commit()
+        }
+
+        val btn3 = findViewById<Button>(R.id.btnSettings)
+        btn3.setOnClickListener {
+            supportActionBar?.title = ""
+            supportFragmentManager.beginTransaction()
+                .replace(
+                    R.id.fragmentContainer,
+                    com.example.assignment3.ui.settings.SettingsFragment()
+                )
+                .addToBackStack("mood")
                 .commit()
         }
     }
