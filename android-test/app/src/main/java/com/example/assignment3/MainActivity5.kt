@@ -17,7 +17,7 @@ class MainActivity5 : AppCompatActivity() {
         val btnNext = findViewById<Button>(R.id.button2)
 
         btnNext.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, MainActivity6::class.java)
             startActivity(intent)
         }
 
